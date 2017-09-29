@@ -109,7 +109,7 @@ func FLBPluginFlush(data unsafe.Pointer, length C.int, tag *C.char) int {
 			return output.FLB_ERROR
 		}
 
-		fmt.Printf("HSET %v %v\n\n", key, flat)
+		// fmt.Printf("HSET %v %v\n\n", key, flat)
 
 		// To mofidy key if we have several metrics in the same second
 		count++
